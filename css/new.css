@@ -1,0 +1,1124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+}
+body {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+main {
+  background-color: #F1F1F2;
+  width: 100%;
+}
+/* This is the innerbox inside the main tag holding all the elements for this site. */
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #F1F1F2;
+}
+.anothermain {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.sponsoredproducts span {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.box {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+nav {
+  width: 100%;
+}
+.bannerone {
+  width: 100%;
+}
+.bannerone img {
+  height: 90px;
+}
+.banner {
+  display: none;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+/* This is the first section of the nav bar, it is hidden on a mobile screen. */
+.navtop {
+  display: none;
+}
+
+/* The main section of the navigation bar, this is where the search button cart, account, etc is. */
+.navbtm {
+  background-color: white;
+}
+.navbtm .upperbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.leftbox {
+  display: flex;
+  gap: 12px;
+}
+.menubar {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+ /* The search bar for a mobile screen. */
+ .mobilesearch {
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid gray;
+ }
+ .mobilesearch .find {
+  display: flex;
+  width: 100%;
+  padding: 4px 8px;
+ }
+ .find {
+  align-items: center;
+}
+ .search {
+  width: 24px;
+  height: 24px;
+ }
+ .mobilesearch input {
+  width: 90%;
+  padding: 4px 8px;
+  border: none;
+  font-size: 15px;
+ }
+
+.biglogo {
+  width: 104px;
+}
+.midbox {
+  display: none;
+}
+.rightbox {
+  display: flex;
+  gap: 12px;
+}
+.text {
+  display: none;
+}
+.cart, .account {
+  width: 24px;
+}
+.help {
+  display: none;
+}
+/* The start of the header */
+header {
+  background-color: #F1F1F2;
+}
+.headerimg {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.slideshow {
+  width: 100%;
+  /* height: 30vh; */
+  display: grid;
+  grid-template-columns: repeat(3, 80%);
+  gap: 10px;
+  grid-template-rows: 100%;
+  overflow-y: scroll;
+}
+.slideshow::-webkit-scrollbar {
+  display: none;
+}
+.headerimg img {
+  height: 100%;
+  border-radius: 5px;
+}
+/* The number display for mobile screen only. */
+.number {
+  background-color: #264996;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 0;
+  width: 100%;
+  margin-top: 10px;
+  height: 32px;
+}
+
+
+.header-content {
+  display: none;
+}
+/* This is the section where deals on products are. */
+
+.lowercontainer .box {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+.dealsbox {
+  margin-top: 3px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.insidepromos {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: max-content;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 10px;
+}
+.insidepromos .dealsbox {
+  width: 20%;
+}
+
+
+
+
+.insidepromos img {
+  object-fit: fill;
+  height: 90%;
+}
+.dealsbox img {
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+}
+.hide {
+  display: none;
+}
+.flashsales {
+  margin-top: 20px;
+}
+section {
+  border-radius: 6px;
+}
+
+.heading {
+  margin: auto;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 7px;
+  background-color: #e61601;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 7px ;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+}
+.hidetext {
+  display: none;
+}
+.flashsales .box {
+  width: 100%;
+}
+.saleleft {
+  margin-left: 10px;
+}
+.saleright {
+  margin-right: 10px;
+}
+.flash {
+  font-weight: 500;
+}
+.time span {
+  font-weight: 500;
+}
+.salestuff {
+  display: flex;
+  gap: 10px;
+  height: max-content;
+  padding-bottom: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+.salecontainer {
+  width: 80%;
+  height: 60%;
+}
+
+.salecontainer .saletext {
+  height: 30%;
+}
+.salestuff::-webkit-scrollbar {
+  display: none;
+}
+.sponsoredproducts .box {
+  background-color: #fff;
+  padding: 4px 6px;
+  width: 95%;
+}
+.saleimg {
+  height: max-content;
+}
+.itemsleft {
+  font-size: 13px;
+}
+.line {
+  width: 100%;
+  height: 8px;
+  border-radius: 70px;
+  background-color: #F1F1F2;
+}
+.yellow {
+  width: 60%;
+  height: 8px;
+  border-radius: 70px;
+  background-color: #F68B1E;
+}
+.saletext {
+  margin-left: 5px;
+}
+
+/* Another promobox */
+.morepromos .box {
+  width: 100%;
+  margin: 0;
+}
+.morepromos .anotherpromos {
+  width: 99%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50%;
+  gap: 4px;
+  text-align: center;
+  height: max-content;
+}
+.morepromos  .box {
+  margin-top: 15px
+}
+.saleimg img {
+  object-position: top;
+  object-fit: cover;
+  height: 100%;
+}
+.itemsleft {
+  font-size: 12px
+}
+.small {
+  width: 90%;
+  background-color: #F68B1E;
+}
+
+/* Sponsored products */
+.anothergridbox {
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 90%;
+  gap: 10px;
+  font-size: 12px;
+  overflow-y: scroll;
+  font-size: 16px;
+}
+.sponsorsprdt {
+font-size: 10px;
+}
+.anothergridbox::-webkit-scrollbar {
+  display: none;
+}
+.limitedstock .heading {
+  background-color: #264996;
+}
+.limitedstock .box {
+  border-radius: 5px;
+}
+.price {
+  font-weight: 500;
+}
+.strike {
+  color: #bfbfc4;
+  text-decoration: line-through;
+}
+
+.morepromos .box {
+  width: 98%;
+  margin: auto;
+  background-color: #fff;
+}
+/* The main fashion section for  elevating looks */
+.looks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+.limitedstock .heading, .yourlooks .heading {
+  background-color: #264996;
+  height: 32px;
+  padding: 4px 7px;
+}
+.yourlooks .heading {
+  justify-content: center;
+}
+.wheelbox {
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: white;
+  padding: 7px 10px;
+  gap: 10px;
+}
+.wheelbox img {
+  border-radius: 5px;
+}
+.wheel {
+  grid-column: 1/4;
+}
+.wheeltwo {
+  grid-column: 4/7;
+}
+.jumiadetails {
+  height: 30vh;
+  overflow-x: scroll;
+}
+.jumiadetails::-webkit-scrollbar {
+  display: none;
+}
+
+/* The footer for a mobile screen*/
+footer {
+  margin-top: 4rem;
+}
+.topfoot {
+  display: none;
+  height: 8vh;
+  padding: 8px;
+  background-color: #313133f2;
+  color: #fff;
+}
+footer .otherside, .logo {
+  display: none;
+}
+.backtotop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  background-color: #313133f2;
+  color: #fff;
+}
+.backtotop span {
+  padding: 0px 8px 8px 8px;
+}
+.bottomfoot {
+  background-color: #313133;
+  color: #fff;
+  height: 20vh;
+}
+.bottomfoot ul {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+.mobilebtmfooter {
+  font-size: 10px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #bfbfc4;
+}
+.allrights {
+  color: #75757A;
+  text-align: center;
+  padding: 8px;
+}
+section {
+  background-color: #F1F1F2;
+}
+.lowerfooter {
+  display: none;
+}
+.jumiafacts .box {
+  background-color: #fff;
+  color: #000;
+}
+.jumiafacts .box h1, .jumiafacts .box  h2, .jumiafacts .box h3, .jumiafacts .box p {
+  padding: 8px 0;
+}
+.jumiafacts .box h1, .jumiafacts .box  h2 {
+  font-size: 18px;
+}
+.jumiadetails {
+  height: max-content;
+  padding: 0px 16px;
+  overflow: unset;
+}
+.jumiafacts a {
+  color: black;
+  text-decoration: underline black;
+}
+.jumiafacts .box  h3 {
+  font-size: 14.0px;
+}
+.jumiafacts .box p {
+  font-size: 12px;
+}
+.yourlooks .box {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* Some properties for screensizes that are 500px and above */
+@media screen and (min-width: 500px) {
+  .slideshow {
+    width: 100%;
+    /* height: 30vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 40%);
+    gap: 10px;
+    grid-template-rows: 100%;
+    overflow-y: scroll;
+  }
+  .insidepromos {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    height: max-content;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .insidepromos .dealsbox {
+    width: 22.5%;
+  }
+  .morepromos .anotherpromos {
+    height: max-content;
+  }
+}
+@media screen and (min-width: 750px) {
+  .insidepromos {
+    height: max-content;
+  }
+}
+/* Style properties for screen sizes that are at least 1000 pixels wide. */
+@media screen and (min-width: 1000px) {
+  section {
+    background-color: #0099FF;
+  }
+  main {
+    background-color: #0099FF;
+  }
+  .insidepromos .dealsbox {
+    width: 15%;
+  }
+  .banner {
+    display: block;
+  }
+  .bannerone {
+    display: none;
+  }
+  .box {
+    width: 85%;
+  }
+  /* This is the first section of the navbar, it is made visible */
+  .navtop {
+    background-color: #F1F1F2;
+    display: flex;
+  }
+  .sell {
+    width: 48%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px 0;
+  }
+  .sellimg {
+    width: 13px;
+  }
+  .sell a {
+    font-size: 12px;
+    color: #F68B1E;
+  }
+  .navtop .box {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  /* This is the small jumia logo. */
+  .smallimg {
+    width: 67px;
+  }
+  .myacc {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .menubar {
+    display: none;
+  }
+  .biglogo {
+    width: 134px;
+  }
+
+  /* The serch box */
+
+  .midbox {
+    display: flex;
+    align-items: center;
+  }
+  .find {
+    display: flex;
+    border: 1px solid gray ;
+  }
+  .find input {
+    font-size: 17px;
+    height: 40px;
+    width: 255px;
+    padding: 1px 2px;
+    margin-right: 8px;
+    border: none;
+  }
+  .navbtm .upperbox {
+    justify-content: space-between;
+  }
+  .otherside {
+    width: 100%;
+  }
+  .midbox {
+    display: flex;
+  }
+
+  .midbox button {
+    margin-left: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #F68B1E;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+  }
+  .search {
+    margin: 0 8px;
+    width: 24px;
+  }
+  .mobilesearch {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+.otherside {
+  display: flex;
+  justify-content: center;
+}
+  .text {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .text span {
+    display: flex;
+    gap: 8px;
+  }
+  .scroll {
+    width: 8px;
+  }
+  .help {
+    display: flex;
+    width: 24px;
+  }
+  /* The header for the big screen */
+  .slideshow {
+    display: none;
+  }
+  header {
+    background-color: #0099FF;
+  }
+  .main-box {
+    background-color: #0099FF;
+  }
+  .header-content {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .gridbox {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-top: 15px;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 13px;
+    font-weight: 500;
+  }
+  .normalweight {
+    font-weight: normal;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+  }
+  .info img {
+    width: 34px;
+  }
+  .box-one,  .box-four, .box-three {
+    display: flex;
+  }
+  .gridbox div {
+    border-radius: 5px;
+  }
+  .box-one {
+    border: 1px solid black;
+    background-color: #fff;
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  /* This is the categories section on the header */
+  .box-one ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+  }
+  /* This is for each of the items on the header for big screen sizes. */
+  .category {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 8px;
+  }
+  .instuments {
+    font-size: 12px;
+    padding: 0 0 0 8px;
+  }
+  .stuff-icon img {
+    width: 18px;
+    margin-right: 3px;
+  }
+  .stufftext {
+    color: black;
+    font-size: 12px;
+  }
+   .box-two {
+    grid-row: 1/3;
+    grid-column: 2/5;
+  } 
+  .box-two .image {
+    height: 100%;
+  }
+  .box-two .image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .box-three {
+    background-color: #fff;
+    grid-row: 1/2;
+    grid-column: 5/6;
+  }
+  .box-four img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .box-four {
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  
+  .box-two img {
+   object-fit: contain;
+   border-radius: 5px;
+   height: 382px;
+  }
+  .lowercontainer .box {
+    background-color: #0099FF;
+  }
+  .insidepromos {
+    justify-content: space-evenly;
+    gap: 0;
+    width: 85%;
+    margin: auto;
+    height: 38vh;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .flashsales, .morepromos {
+    background-color: #0099FF;
+  }
+  .morepromos .box {
+    background-color: #fff
+  }
+  .dealsbox {
+    margin-top: 5px;
+  }
+  .hide {
+    display: block;
+  }
+  .hiding {
+    display: none;
+  }
+  .flashsales .box {
+    width: 85%;
+  }
+  .hidetext {
+    display: block;
+  }
+
+  .salestuff {
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: 90%;
+    background-color: #fff;
+    height: max-content;
+    font-size: 16px;
+  }
+  
+
+  .morepromos .anotherpromos {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 246px;
+    text-align: center;
+    height: 30vh;
+  }
+  .morepromos .box {
+    width: 85%;
+    margin: auto;
+  }
+  .hidebox {
+    display: none;
+  }
+
+  /* Elevate your look section */
+  .looks {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    grid-template-rows: 100%;
+    height: max-content;
+    background-color: #fff;
+  }
+  .limitedstock .heading, .yourlooks .heading {
+    width: 84%;
+    margin: auto;
+    background-color: #264996;
+    padding: 4px 9px;
+  }
+  .yourlooks {
+    margin-top: 4rem;
+  }
+
+  .wheeling {
+    width: 85%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2rem auto;
+  }
+  
+.sponsoredproducts .box {
+  width: 85%;
+}
+  .wheelbox {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-radius: 5px;
+  }
+  .wheel {
+    grid-column: 1/4;
+  }
+  .wheel img {
+    object-fit: cover;
+  }
+  .wheeltwo {
+    grid-column: 4/7;
+  }
+  .yourlooks .box {
+    background-color: #fff;
+    height: max-content;
+    padding-bottom: 25px;
+  }
+  .looks {
+    width: 97%;
+    margin: auto;
+    height: 100%;
+    padding-top: 10px;
+  }
+  img {
+    border-radius: 6px;
+  }
+  .appliancebox {
+    height: max-content;
+    background-color: #fff;
+    padding: 10px 4px 4px 4px;
+  }
+  .homebox {
+    height: 270px;
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
+  /* The footer */
+  .backtotop {
+    display: none;
+  }
+  .topfoot {
+  display: flex;
+  align-items: start;
+  /* justify-content: space-between; */
+  height: 37vh;
+  padding: 8px;
+  background-color: #313133f2;
+  color: #fff;
+  padding-top: 20px;
+}
+.topfoot .box {
+  gap: 8rem;
+}
+.listhead {
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.logo  {
+  display: flex;
+}
+
+.logo {
+  width: 30%;
+}
+footer .otherside {
+  display: block;
+  height: 100%;
+}
+.othertop {
+  height: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.mailinglist {
+  display: flex;
+  flex-direction: column;
+}
+.topfoot .box {
+  display: flex;
+  align-items: start;
+  height: 100%;
+}
+.uppermail {
+  line-height: 20px;
+}
+.emailbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  height: 40px;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.emailbox {
+  margin-bottom: 20px;
+}
+.myemail {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.myemail button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  height: 40px;
+  padding: 3px 24px;
+  border-radius: 5px;
+}
+.subscribe {
+  margin-top: 4px;
+}
+.emailbox .email {
+  width: 8%;
+  padding-left: 5px;
+}
+.emailbox input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.bottomfoot {
+  display: none;
+}
+.check {
+  display: flex;
+  gap: 15px;
+  margin-top: 5rem;
+  font-size: 12px;
+}
+.leftcheck, .orangetext {
+  display: block;
+}
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #75757A;
+  background-color: #313133;
+  border-radius: 3px;
+  display: inline-block;
+}
+.orangetext {
+  color: #F68B1E;
+}
+/* The lower section of the footer */
+.jumiaservices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-top: 20px;
+}
+.jumiaservices ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  list-style: none;
+}
+.lowerfooter {
+  display: block;
+  height: 100vh;
+  background-color: #535357;
+  color: #fff;
+}
+.ulhead, .ulheadtwo {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.app {
+  width: 40%;
+}
+ .apptext {
+  display: flex;
+  flex-direction: column;
+}
+.appcontent {
+  display: flex;
+  font-size: 12px;
+}
+.apptext {
+  justify-content: space-between;
+}
+.appimg {
+  width: 20%;
+}
+.theicons {
+  display: flex;
+  font-size: 12px;
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+}
+.linetwo {
+  width: 100%;
+  height: 1px;
+  background-color: #bfbfc4;
+  margin-top: 3rem;
+}
+.payiconbox {
+  display: flex;
+  justify-content: center;
+}
+.jumiapay {
+  padding-top: 7px;
+  width: 10%;
+}
+.socials {
+  width: 29%;
+}
+.mediaplatt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+.pay {
+  padding-top: 5px;
+}
+.paymentplatt {
+  width: 50%;
+}
+.media {
+  width: 10%;
+}
+.mediapay {
+  width: 10%;
+}
+.ulheadtwo {
+  padding-top: 15px;
+}
+.othercountries {
+  gap: 10px;
+}
+.othercountries, .countries {
+  display: flex;
+}
+.countries {
+  flex-direction: column;
+}
+}
