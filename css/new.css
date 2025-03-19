@@ -23,6 +23,9 @@ main {
   width: 100%;
   background-color: #F1F1F2;
 }
+section {
+  margin-bottom: 1rem;
+}
 .anothermain {
   width: 100%;
   height: max-content;
