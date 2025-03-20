@@ -23,9 +23,6 @@ main {
   width: 100%;
   background-color: #F1F1F2;
 }
-section {
-  margin-bottom: 1rem;
-}
 .anothermain {
   width: 100%;
   height: max-content;
@@ -34,10 +31,12 @@ section {
   justify-content: space-between;
   gap: 10px;
 }
-.sponsoredproducts span {
+.sponsoredproducts .heading {
+  background-color: #fff;
   font-weight: 500;
-  margin-bottom: 20px;
+  color: black;
 }
+
 .box {
   width: 98%;
   margin-left: auto;
@@ -421,6 +420,7 @@ font-size: 10px;
 /* The footer for a mobile screen*/
 footer {
   margin-top: 4rem;
+  height: max-content;
 }
 .topfoot {
   display: none;
@@ -491,9 +491,7 @@ section {
   font-size: 18px;
 }
 .jumiadetails {
-  height: max-content;
   padding: 0px 16px;
-  overflow: unset;
 }
 .jumiafacts a {
   color: black;
@@ -917,7 +915,12 @@ section {
     background-color: #fff;
     padding-bottom: 20px;
   }
+  .jumiadetails {
+    height: 330vh;
+    overflow: unset;
+  }
   /* The footer */
+
   .backtotop {
     display: none;
   }
