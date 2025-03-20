@@ -15,6 +15,9 @@ main {
   background-color: #F1F1F2;
   width: 100%;
 }
+section {
+  margin-bottom: 0.5rem;
+}
 /* This is the innerbox inside the main tag holding all the elements for this site. */
 .main-box {
   display: flex;
